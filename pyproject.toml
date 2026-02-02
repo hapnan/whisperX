@@ -9,19 +9,20 @@ requires-python = ">=3.10, <3.14"
 license = { text = "BSD-2-Clause" }
 
 dependencies = [
-  "ctranslate2>=4.5.0",
-  "faster-whisper>=1.1.1",
-  "nltk>=3.9.1",
-  "numpy>=2.0.2",
+  "ctranslate2>=4.6.3",
+  "faster-whisper>=1.2.1",
   "omegaconf>=2.3.0",
   "onnxruntime>=1.19",
-  "pandas>=2.2.3",
   "av<16.0.0",
   "pyannote-audio>=4.0.3",
+  "nltk>=3.9.1",
+  "numpy>=2.1.0",
+  "pandas>=2.2.3",
+  "huggingface-hub<1.0.0",
   "torch~=2.8.0",
   "torchaudio~=2.8.0",
-  "transformers>=4.48.0",
-  "triton>=3.3.0; sys_platform == 'linux' and platform_machine == 'x86_64'", # only install triton on x86_64 Linux
+  "transformers>=4.49.0",
+  "triton>=3.3.0; sys_platform == 'linux' and platform_machine == 'x86_64'" # only install triton on x86_64 Linux
 ]
 
 
